@@ -2,7 +2,7 @@ class UsrData:
 
 
     def __init__(self) -> None:
-        self.datas = [{'name':'Tim', 'time':[0, 0, 1],'memo':'test'},{'name':'Tim', 'time':[0, 0, 1],'memo':'test'},{'name':'Tim', 'time':[0, 0, 1],'memo':'test'}]
+        self.datas = [{'name':'Tim', 'time':[0, 0, 1],'memo':'demo'},{'name':'Tim', 'time':[0, 0, 1],'memo':'DEMO'},{'name':'Tim', 'time':[0, 0, 1],'memo':'DEMO'}]
 
         pass
 
