@@ -5,10 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study-by-ME</title>
 </head>
+<style>
+    body{
+        margin: 0 auto;
+        text-align: center;
+    }
+    table{
+        width: 80%;
+        margin: 0 auto; 
+        border-collapse: collapse;
+        text-align: center; 
+    }
+</style>
 <body>
-    <b>타이머를 취소하려면 새로고침을 해주세요. </b>
+    <b>타이머를 다시 시작하려면 새로고침을 해주세요. </b>
     <h1 id = 'timeDisplay'>00:00:00</h1>
     <button onclick="timeClear() ">공부 끝내기</button>
+    <br>
+    <h3>공부량 Top3</h3>
+    <table>
+        <thead>
+          <tr>
+            <th>닉네임</th>
+            <th>과목</th>
+            <th>시간</th>
+            <th>메모</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id = 'name1'>-</td>
+            <td id = 'subject1'>과탐</td>
+            <td id = 'time1'>-</td>
+            <td id = 'memo1'>-</td>
+          </tr>
+          <tr>
+            <td id = 'name2'>-</td>
+            <td id = 'subject2'>수학</td>
+            <td id = 'time2'>-</td>
+            <td id = 'memo2'>-</td>
+          </tr>
+          <tr>
+            <td id = 'name3'>-</td>
+            <td id = 'subject3'>수학</td>
+            <td id = 'time3'>-</td>
+            <td id = 'memo3'>-</td>
+          </tr>
+        </tbody>
+      </table>
     
     
 </body>
