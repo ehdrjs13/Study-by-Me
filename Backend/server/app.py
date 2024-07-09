@@ -25,7 +25,6 @@ def receive_data():
 
 @app.route('/top3', methods=['GET'])
 
-#top3 반환
 def top_3():
     top3 = timetools.get_top3(uploader.datas)
 

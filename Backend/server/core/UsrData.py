@@ -1,6 +1,4 @@
 class UsrData:
-
-
     def __init__(self) -> None:
         self.datas = [{'name':'Tim', 'time':[0, 0, 1],'memo':'test'},{'name':'Tim', 'time':[0, 0, 1],'memo':'test'},{'name':'Tim', 'time':[0, 0, 1],'memo':'test'}]
 
@@ -18,4 +16,5 @@ class UsrData:
         
         
         return
+    
     

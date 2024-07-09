@@ -4,9 +4,9 @@ function rank_update() {
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data); // 받아온 데이터를 콘솔에 출력하여 확인
+        console.log(data); 
         
-        // 데이터 처리
+
         const name1 = data.first.name;
         const time1 = timeArray2str(data.first.time);
         const memo1 = data.first.memo;
@@ -19,7 +19,6 @@ function rank_update() {
         const time3 = timeArray2str(data.third.time);
         const memo3 = data.third.memo;
 
-        // HTML 업데이트
         document.getElementById('name1').innerHTML = name1;
         document.getElementById('time1').innerHTML = time1;
         document.getElementById('memo1').innerHTML = memo1;
@@ -33,8 +32,8 @@ function rank_update() {
         document.getElementById('memo3').innerHTML = memo3;
     })
     .catch(error => {
-        console.error('데이터를 불러오는 도중 에러가 발생했습니다:', error);
-        // 에러 처리 로직을 추가할 수 있습니다.
+        console.error(error);
+
     });
 }
 
