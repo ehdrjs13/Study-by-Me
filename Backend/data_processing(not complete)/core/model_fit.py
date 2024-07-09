@@ -23,7 +23,7 @@ class Model:
         
         pass
 
-    def get_data(self) -> None:
+    def set_data(self) -> None:
         
         texts = Model.SUBJECT_DATASET
         labels = Model.SUBJECT_LABLE
