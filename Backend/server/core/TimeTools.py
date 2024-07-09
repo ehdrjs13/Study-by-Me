@@ -10,7 +10,7 @@ class TimeTools:
 
         return sec
 
-    '''get top3'''
+    '''Get top3 users' datas'''
     def get_top3(self,list) -> list:
             
         top = sorted(list, key=lambda x: TimeTools.time2sec(x['time']), reverse=True)[:3]

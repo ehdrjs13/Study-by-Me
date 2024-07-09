@@ -1,3 +1,5 @@
+#not completed due to model train dataset issues. 
+
 class Analyze:
     def analyze(self,text):
         import joblib

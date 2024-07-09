@@ -43,14 +43,15 @@ class Model:
         return
     
     def train_model(self) -> None:
-        model = Sequential([
-            Dense(128, input_shape=(self.X_train.shape[1],), activation='relu'),
-            Dense(64, activation='relu'),
-            Dense(5, activation='softmax') 
-        ])
+
+        model = Sequential()
+
+        model.add(Dense(128, input_shape=(self.X_train.shape[1],), activation='relu'))
+        model.add(Dense(64, activation='relu'))
+        model.add(Dense(5, activation='softmax') )
 
         model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
-        model.fit(self.X_train, self.y_train, epochs=20, validation_data=(self.X_test, self.y_test))
+        model.fit(self.X_train, self.y_train, epochs=200, validation_data=(self.X_test, self.y_test))
         model.save('model.h5')
 
         return
