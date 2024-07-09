@@ -6,7 +6,6 @@ function rank_update() {
     .then(data => {
         console.log(data); 
         
-
         const name1 = data.first.name;
         const time1 = timeArray2str(data.first.time);
         const memo1 = data.first.memo;
