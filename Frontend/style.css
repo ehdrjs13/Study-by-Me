@@ -1,0 +1,25 @@
+#title{
+    background-color: rgb(214, 255, 247);
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+    height: 23vh;
+}
+
+#time{
+    background-color: rgb(238, 220, 255);
+    width: 50%;
+    margin: auto;
+    border-radius: 50px;
+    height: 23vh;
+}
+
+#list{
+    background-color: rgb(220, 224, 255);
+    width: 80%;
+    margin: auto;
+    border-radius: 50px;
+}
+
+#billboard{
+}
