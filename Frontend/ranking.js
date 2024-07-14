@@ -9,26 +9,32 @@ function rank_update() {
         const name1 = data.first.name;
         const time1 = timeArray2str(data.first.time);
         const memo1 = data.first.memo;
+        const subject1 = data.first.subject;
         
         const name2 = data.second.name;
         const time2 = timeArray2str(data.second.time);
         const memo2 = data.second.memo;
+        const subject2 = data.second.subject;
         
         const name3 = data.third.name;
         const time3 = timeArray2str(data.third.time);
         const memo3 = data.third.memo;
+        const subject3 = data.third.subject;
 
         document.getElementById('name1').innerHTML = name1;
         document.getElementById('time1').innerHTML = time1;
         document.getElementById('memo1').innerHTML = memo1;
+        document.getElementById('subject1').innerHTML = subject1;
 
         document.getElementById('name2').innerHTML = name2;
         document.getElementById('time2').innerHTML = time2;
         document.getElementById('memo2').innerHTML = memo2;
+        document.getElementById('subject2').innerHTML = subject2;
 
         document.getElementById('name3').innerHTML = name3;
         document.getElementById('time3').innerHTML = time3;
         document.getElementById('memo3').innerHTML = memo3;
+        document.getElementById('subject3').innerHTML = subject3;
     })
     .catch(error => {
         console.error(error);

@@ -1,6 +1,10 @@
 class UsrData:
     def __init__(self) -> None:
-        self.datas = [{'name':'Tim', 'time':[0, 0, 1],'memo':'demo'},{'name':'Tim', 'time':[0, 0, 1],'memo':'DEMO'},{'name':'Tim', 'time':[0, 0, 1],'memo':'DEMO'}]
+        from core.analysis_wnn import Analysis
+
+        self.analyze = Analysis()
+
+        self.datas = [{'name':'Tim', 'time':[0, 0, 1],'memo':'demo','subject':'정보'},{'name':'Tim', 'time':[0, 0, 1],'memo':'DEMO','subject':'정보'},{'name':'Tim', 'time':[0, 0, 1],'memo':'DEMO','subject':'정보'}]
 
         pass
 
@@ -9,8 +13,9 @@ class UsrData:
         name = receivedData["name"]
         time = receivedData["time"]
         memo = receivedData["memo"]
+        subject = self.analyze.classify(receivedData["memo"])
 
-        self.datas.append({'name':name, 'time': time, 'memo': memo})
+        self.datas.append({'name':name, 'time': time, 'memo': memo, 'subject': subject})
 
         print(self.datas)
         
